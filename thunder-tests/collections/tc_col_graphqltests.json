@@ -246,6 +246,43 @@
                 }
             },
             "tests": []
+        },
+        {
+            "_id": "0f546c0b-4410-4587-905d-ccdb269b9794",
+            "colId": "3147a432-84fc-4d60-be10-b9ee80733c73",
+            "containerId": "f576d60c-9210-44e7-9508-5ab272547472",
+            "name": "outra",
+            "url": "{{baseUrl}}",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2023-07-03T12:09:04.423Z",
+            "modified": "2023-07-03T12:09:48.879Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "graphql",
+                "raw": "",
+                "form": [],
+                "graphql": {
+                    "query": "query teste {\n  getAllUsers {\n    id,\n    name,\n    age,\n    email,\n    hobbies {\n      name\n    }\n  }\n}"
+                }
+            },
+            "tests": []
         }
     ],
     "settings": {
