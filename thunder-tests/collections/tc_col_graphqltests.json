@@ -1,0 +1,254 @@
+{
+    "_id": "3147a432-84fc-4d60-be10-b9ee80733c73",
+    "colName": "graphql_tests",
+    "created": "2023-07-03T11:32:37.768Z",
+    "sortNum": 10000,
+    "folders": [
+        {
+            "_id": "772233d9-b767-450b-aad6-c61d476c5b76",
+            "name": "user",
+            "containerId": "",
+            "created": "2023-07-03T11:34:10.904Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "f576d60c-9210-44e7-9508-5ab272547472",
+            "name": "hobby",
+            "containerId": "",
+            "created": "2023-07-03T11:34:16.159Z",
+            "sortNum": 20000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "7596b2af-906f-45d6-a182-dbb8925b4541",
+            "colId": "3147a432-84fc-4d60-be10-b9ee80733c73",
+            "containerId": "772233d9-b767-450b-aad6-c61d476c5b76",
+            "name": "get user",
+            "url": "{{baseUrl}}",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-07-03T11:34:37.679Z",
+            "modified": "2023-07-03T11:47:43.671Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "graphql",
+                "raw": "",
+                "form": [],
+                "graphql": {
+                    "query": "query getOne ($id: Float!){\n  getUserById (id: $id) {\n    id,\n    name,\n    age,\n    email,\n  }\n}",
+                    "variables": "{\n  \"id\": 1\n}"
+                }
+            },
+            "tests": []
+        },
+        {
+            "_id": "231fa58c-74c3-450e-b6fe-e00d3e3abdcd",
+            "colId": "3147a432-84fc-4d60-be10-b9ee80733c73",
+            "containerId": "772233d9-b767-450b-aad6-c61d476c5b76",
+            "name": "add user",
+            "url": "{{baseUrl}}",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-07-03T11:38:29.396Z",
+            "modified": "2023-07-03T11:47:29.100Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "graphql",
+                "raw": "",
+                "form": [],
+                "graphql": {
+                    "query": "mutation createUser ($input: CreateUserInput!) {\n  createUser (createUserInput: $input) {\n    id,\n    name,\n    age,\n    email\n  }\n}",
+                    "variables": "{\n    \"input\": {\n      \"name\": \"pessoa\", \n      \"age\": 22, \n      \"email\": \"pessoa@email.com\"\n    }\n}"
+                }
+            },
+            "tests": []
+        },
+        {
+            "_id": "a5ec7092-c4d3-4ae3-a2a6-2de14a72a674",
+            "colId": "3147a432-84fc-4d60-be10-b9ee80733c73",
+            "containerId": "772233d9-b767-450b-aad6-c61d476c5b76",
+            "name": "get all users",
+            "url": "{{baseUrl}}",
+            "method": "POST",
+            "sortNum": 15000,
+            "created": "2023-07-03T11:48:00.563Z",
+            "modified": "2023-07-03T11:48:17.593Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "graphql",
+                "raw": "",
+                "form": [],
+                "graphql": {
+                    "query": "query getAll {\n  getAllUsers {\n    id,\n    name,\n    age,\n    email,\n    hobbies {\n      name\n    }\n  }\n}"
+                }
+            },
+            "tests": []
+        },
+        {
+            "_id": "20c63146-d93c-4dc2-bef0-704b07a1ab7a",
+            "colId": "3147a432-84fc-4d60-be10-b9ee80733c73",
+            "containerId": "772233d9-b767-450b-aad6-c61d476c5b76",
+            "name": "update user",
+            "url": "{{baseUrl}}",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2023-07-03T11:48:33.196Z",
+            "modified": "2023-07-03T11:50:24.579Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "graphql",
+                "raw": "",
+                "form": [],
+                "graphql": {
+                    "query": "mutation updateUser ($id: Float!, $input: UpdateUserInput!){\n  updateUser (id: $id, updateUserInput: $input) {\n    id,\n    name,\n    age,\n    email\n  }\n}",
+                    "variables": "{\n    \"input\": {\n      \"age\": 23, \n      \"email\": \"pessoa@gmail.com\"\n    },\n    \"id\": 1\n}"
+                }
+            },
+            "tests": []
+        },
+        {
+            "_id": "4c57f9e2-efbb-4ceb-90f7-201488495377",
+            "colId": "3147a432-84fc-4d60-be10-b9ee80733c73",
+            "containerId": "772233d9-b767-450b-aad6-c61d476c5b76",
+            "name": "delete user",
+            "url": "{{baseUrl}}",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2023-07-03T11:50:46.300Z",
+            "modified": "2023-07-03T11:51:43.881Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "graphql",
+                "raw": "",
+                "form": [],
+                "graphql": {
+                    "query": "mutation deletedUser ($id: Float!) {\n  deleteUser(id: $id)\n}",
+                    "variables": "{\n    \"id\": 5\n}"
+                }
+            },
+            "tests": []
+        },
+        {
+            "_id": "ca6f2d46-131b-4a9a-9a21-aa819e32673a",
+            "colId": "3147a432-84fc-4d60-be10-b9ee80733c73",
+            "containerId": "f576d60c-9210-44e7-9508-5ab272547472",
+            "name": "add hobby",
+            "url": "{{baseUrl}}",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-07-03T11:52:30.435Z",
+            "modified": "2023-07-03T11:54:17.022Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "graphql",
+                "raw": "",
+                "form": [],
+                "graphql": {
+                    "query": "mutation addHobby($id: Float!, $input: AddHobbyInput!){\n  addHobby(id: $id, addHobbyInput: $input) {\n    id,\n    name,\n    description,\n  }\n}",
+                    "variables": "{\n  \"id\": 1,\n  \"input\": {\n    \"name\": \"Quebra-cabeça\",\n    \"description\":\"Montar quebra-cabeça com mais de 1500 mil peças\"\n  }\n}"
+                }
+            },
+            "tests": []
+        }
+    ],
+    "settings": {
+        "envId": "17b33e61-db8d-46d2-a551-5969d1f07d9b"
+    }
+}
