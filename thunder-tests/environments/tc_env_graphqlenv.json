@@ -1,0 +1,10 @@
+{
+    "_id": "e68a7317-4238-4229-a326-fcaad23e0f25",
+    "name": "graphql_env",
+    "default": true,
+    "sortNum": 30000,
+    "created": "2023-07-04T17:27:16.695Z",
+    "modified": "2023-07-04T17:27:16.695Z",
+    "data": [],
+    "envFile": "../.env"
+}

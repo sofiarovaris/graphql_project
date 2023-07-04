@@ -252,11 +252,11 @@
             "colId": "3147a432-84fc-4d60-be10-b9ee80733c73",
             "containerId": "",
             "name": "status",
-            "url": "{{baseUrl}}",
+            "url": "{{BASE_URL_GRAPHQL}}",
             "method": "POST",
             "sortNum": 50000,
             "created": "2023-07-04T16:43:54.471Z",
-            "modified": "2023-07-04T16:44:36.990Z",
+            "modified": "2023-07-04T17:27:58.633Z",
             "headers": [
                 {
                     "name": "Content-Type",
@@ -286,6 +286,6 @@
         }
     ],
     "settings": {
-        "envId": "17b33e61-db8d-46d2-a551-5969d1f07d9b"
+        "envId": "e68a7317-4238-4229-a326-fcaad23e0f25"
     }
 }
