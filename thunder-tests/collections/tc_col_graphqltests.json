@@ -25,11 +25,11 @@
             "colId": "3147a432-84fc-4d60-be10-b9ee80733c73",
             "containerId": "772233d9-b767-450b-aad6-c61d476c5b76",
             "name": "get user",
-            "url": "{{baseUrl}}",
+            "url": "{{BASE_URL_GRAPHQL}}",
             "method": "POST",
             "sortNum": 10000,
             "created": "2023-07-03T11:34:37.679Z",
-            "modified": "2023-07-03T11:47:43.671Z",
+            "modified": "2023-07-04T18:01:44.718Z",
             "headers": [
                 {
                     "name": "Content-Type",
