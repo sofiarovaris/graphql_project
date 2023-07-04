@@ -6,20 +6,18 @@ import { User } from './entities/user.entity';
 import { Hobby } from './entities/hobby.entity';
 import { UserModule } from './modules/user/user.module';
 import { HobbyModule } from './modules/hobby/hobby.module';
+import { AppResolver } from './app.resolver';
 
 @Module({
   imports: [
     TypeOrmModule.forRoot({
       type: 'mysql',
       host: 'localhost',
-      port: 3306,
+      port: 3308,
       username: 'root',
-      password: 'rootpass',
+      password: 'rootdevpass',
       database: 'graphql',
-      entities: [
-        User,
-        Hobby,
-      ],
+      entities: [User, Hobby],
       synchronize: true,
     }),
     GraphQLModule.forRoot<ApolloDriverConfig>({
@@ -30,6 +28,6 @@ import { HobbyModule } from './modules/hobby/hobby.module';
     HobbyModule,
   ],
   controllers: [],
-  providers: [],
+  providers: [AppResolver],
 })
-export class AppModule { }
+export class AppModule {}
