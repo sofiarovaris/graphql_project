@@ -1,0 +1,56 @@
+{
+    "_id": "64c7ddc9-428b-4254-aa3b-b1a7b5355c46",
+    "colName": "another_collection",
+    "created": "2023-07-04T18:12:37.523Z",
+    "sortNum": 20000,
+    "folders": [
+        {
+            "_id": "23b597af-84cd-45c3-b862-2f35045da3ec",
+            "name": "folder1",
+            "containerId": "",
+            "created": "2023-07-04T18:12:45.048Z",
+            "sortNum": 10000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "d9c2deb8-27c3-4cdf-b6d0-3f3a0a926614",
+            "colId": "64c7ddc9-428b-4254-aa3b-b1a7b5355c46",
+            "containerId": "23b597af-84cd-45c3-b862-2f35045da3ec",
+            "name": "request test",
+            "url": "",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-07-04T18:13:29.684Z",
+            "modified": "2023-07-04T18:14:11.836Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "graphql",
+                "raw": "",
+                "form": [],
+                "graphql": {
+                    "query": "query status{\n  status\n}"
+                }
+            },
+            "tests": []
+        }
+    ],
+    "settings": {
+        "options": {
+            "baseUrl": "{{BASE_URL_GRAPHQL}}"
+        },
+        "envId": "e68a7317-4238-4229-a326-fcaad23e0f25"
+    }
+}
